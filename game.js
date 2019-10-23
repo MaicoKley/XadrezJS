@@ -18,11 +18,24 @@ boardImage.onload = function () {
 boardImage.src = 'images/board.png';
 
 
+// Peões
+var pawnBlack = new Image();
+pawnBlack.src = 'images/Pawn-black.png';
+
 
 // Renderiza tudo
 var render = function render() {
   if (boardReady) {
     ctx.drawImage(boardImage, 0, 0);
+
+    ctx.drawImage(pawnBlack, 65, 192);  
+    ctx.drawImage(pawnBlack, 190, 192);
+    ctx.drawImage(pawnBlack, 320, 192);     
+    ctx.drawImage(pawnBlack, 445, 192);     
+    ctx.drawImage(pawnBlack, 575, 192);  
+    ctx.drawImage(pawnBlack, 705, 192);     
+    ctx.drawImage(pawnBlack, 830, 192);     
+    ctx.drawImage(pawnBlack, 960, 192);              
   }
 
 };
