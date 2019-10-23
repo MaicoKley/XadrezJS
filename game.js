@@ -21,6 +21,8 @@ boardImage.src = 'images/board.png';
 // Peões
 var pawnBlack = new Image();
 pawnBlack.src = 'images/Pawn-black.png';
+var pawnWhite = new Image();
+pawnWhite.src = 'images/Pawn-white.png';
 
 
 // Renderiza tudo
@@ -35,7 +37,16 @@ var render = function render() {
     ctx.drawImage(pawnBlack, 575, 192);  
     ctx.drawImage(pawnBlack, 705, 192);     
     ctx.drawImage(pawnBlack, 830, 192);     
-    ctx.drawImage(pawnBlack, 960, 192);              
+    ctx.drawImage(pawnBlack, 960, 192);      
+    
+    ctx.drawImage(pawnWhite, 65, 833);  
+    ctx.drawImage(pawnWhite, 190, 833);
+    ctx.drawImage(pawnWhite, 320, 833);     
+    ctx.drawImage(pawnWhite, 445, 833);     
+    ctx.drawImage(pawnWhite, 575, 833);  
+    ctx.drawImage(pawnWhite, 705, 833);     
+    ctx.drawImage(pawnWhite, 830, 833);     
+    ctx.drawImage(pawnWhite, 960, 833);
   }
 
 };
